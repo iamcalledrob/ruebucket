@@ -4,7 +4,7 @@ ruelimit implements high-performance rate limiting algorithms with both in-memor
 Distributed variants built on top of [redis/rueidis](https://github.com/redis/rueidis) with auto-pipelining.
 The in-memory variants use a sharded lockable map.
 
-[Godoc](https://pkg.go.dev/github.com/iamcalledrob/ruerate)
+[![Go Reference](https://pkg.go.dev/badge/github.com/iamcalledrob/ruerate.svg)](https://pkg.go.dev/github.com/iamcalledrob/ruerate)
 
 [![Test](https://github.com/iamcalledrob/ruerate/actions/workflows/test.yml/badge.svg)](https://github.com/iamcalledrob/ruerate/actions/workflows/test.yml)
 
