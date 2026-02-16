@@ -5,6 +5,7 @@ Distributed variants built on top of [redis/rueidis](https://github.com/redis/ru
 The in-memory variants use a sharded lockable map.
 
 [Godoc](https://pkg.go.dev/github.com/iamcalledrob/ruerate)
+
 [![Test](https://github.com/iamcalledrob/ruerate/actions/workflows/test.yml/badge.svg)](https://github.com/iamcalledrob/ruerate/actions/workflows/test.yml)
 
 
