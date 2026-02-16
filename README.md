@@ -5,6 +5,7 @@ Distributed variants built on top of [redis/rueidis](https://github.com/redis/ru
 The in-memory variants use a sharded lockable map.
 
 [Godoc](https://pkg.go.dev/github.com/iamcalledrob/ruerate)
+[![Test](https://github.com/iamcalledrob/ruerate/actions/workflows/test.yml/badge.svg)](https://github.com/iamcalledrob/ruerate/actions/workflows/test.yml)
 
 
 ## Features
@@ -30,7 +31,7 @@ with occasional bursts.
 
 ### Configuration
 The `tokenbucket.LimiterOpts` struct defines the bucket behavior:
-```
+```golang
 type LimiterOpts struct {
     RatePerSec float64 // How many tokens are added to the bucket per second
     Capacity   int64   // Maximum tokens the bucket can hold
@@ -81,7 +82,7 @@ loops, i.e. with the local in-memory variants.
 
 ### Configuration
 The `backoff.LimiterOpts` struct defines the bucket behavior:
-```
+```golang
 type LimiterOpts struct {
     BaseWait              time.Duration // Minimum wait between attempts
     MaxWait               time.Duration // Maximum "lockout" duration
